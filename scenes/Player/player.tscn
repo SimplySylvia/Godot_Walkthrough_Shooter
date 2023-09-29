@@ -22,3 +22,14 @@ shape = SubResource("CircleShape2D_5c4sn")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(22.5, -90)
 shape = SubResource("RectangleShape2D_5hwq1")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="GrenadeReloadTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="GrenadeReloadTimer" to="." method="_on_grenade_reload_timer_timeout"]
