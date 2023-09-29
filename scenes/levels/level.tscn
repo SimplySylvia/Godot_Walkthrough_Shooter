@@ -1,14 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3o32e8p3wbq7"]
+[gd_scene load_steps=3 format=3 uid="uid://c3o32e8p3wbq7"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_bavrj"]
 [ext_resource type="PackedScene" uid="uid://bhet6kx6a4ms8" path="res://scenes/Player/player.tscn" id="1_fqqjd"]
-[ext_resource type="PackedScene" uid="uid://ddm8i1upq7q71" path="res://scenes/Objects/billboard.tscn" id="3_8bb7g"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_bavrj")
 
 [node name="Player" parent="." instance=ExtResource("1_fqqjd")]
-position = Vector2(415, 421)
-
-[node name="Billboard" parent="." instance=ExtResource("3_8bb7g")]
-position = Vector2(461, 131)
+position = Vector2(496, 543)
